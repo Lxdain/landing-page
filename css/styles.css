@@ -5,29 +5,30 @@
   background-color: hsl(0deg, 0%, 98%);
 }
 
-.title {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: 8vh;
+body {
+  padding-top: 8vh;
 }
 
-#first-line {
-  font-size: 36px;
+.title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.first-line {
+  font-size: 34px;
   font-weight: 200;
 }
 
-#second-line {
-  font-size: 36px;
+.second-line {
+  font-size: 48px;
   font-weight: 600;
+  padding-bottom: 40px;
 }
 
-#third-line {
-  font-size: 15px;
+.third-line {
+  font-size: 16px;
   font-weight: 400;
+  margin: 0 auto;
+  width: 550px;
   color: rgb(157, 157, 157);
-  line-break: auto;
-  text-align: center;
-}/*# sourceMappingURL=styles.css.map */
+}
