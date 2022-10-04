@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+}
+
+#first-line {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+#second-line {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#third-line {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(157, 157, 157);
+  line-break: auto;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
