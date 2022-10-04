@@ -9,6 +9,9 @@ $dark-blue: hsl(234, 12%, 34%);
 $grayish-blue: hsl(229, 6%, 66%);
 $light-gray: hsl(0, 0%, 98%);
 
+// My Colors
+$text-gray: rgb(157, 157, 157);
+$shadow-blue: hsla(212, 86%, 64%, 0.225);
 
 * {
     box-sizing: border-box;
@@ -24,16 +27,83 @@ $light-gray: hsl(0, 0%, 98%);
     align-items: center;
     position: relative;
     top: 8vh;
-} #first-line {
-    font-size: 36px;
-    font-weight: 200;  
-} #second-line {
-    font-size: 36px;
-    font-weight: 600;
-} #third-line {
-    font-size: 15px;
-    font-weight: 400;
-    color: rgb(157, 157, 157);
-    line-break: auto;
-    text-align: center;
+    #first-line {
+        font-size: 36px;
+        font-weight: 200;
+        color: $dark-blue;
+    } #second-line {
+        font-size: 36px;
+        font-weight: 600;
+        color: $dark-blue;
+    } #third-line {
+        font-size: 15px;
+        font-weight: 400;
+        color: $text-gray;
+        opacity: 80%;
+        text-align: center;
+    }
 }
+
+.card-master {
+    position: relative;
+    top: 13vh;
+    display: flex;
+    flex-direction: row;
+    .card-box {
+        position: relative;
+        border: 0px 5px 5px 5px solid transparent;
+        border-radius: 5px;
+        height: 250px;
+        width: 350px;
+        background-color: white;
+        box-shadow: 0px 5px 5px $shadow-blue;
+        transition: transform 0.5s;
+    }
+    .card-box:hover {
+        transform: scale(1.05);
+    } .card-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: $dark-blue;
+        opacity: 70%;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    } .card-content {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: $text-gray;
+        opacity: 70%;
+        position: absolute;
+        left: 30px;
+        top: 70px;
+    } .card-icon {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    } #card1 { // Supervisor
+        border-top: 5px solid $cyan;
+        position: absolute;
+        left: 21vw;
+        top: 15vh;
+    } #card2 { // Team Builder
+        border-top: 5px solid $red;
+        position: absolute;
+        right: 41vw;
+        top: 1vh;
+    } #card3 { // Karma
+        border-top: 5px solid $orange;
+        position: absolute;
+        right: 41vw;
+        top: 31vh;
+    } #card4 { // Calculator
+        border-top: 5px solid $blue;
+        position: absolute;
+        right: 21vw;
+        top: 15vh;
+    }
+}
+
+

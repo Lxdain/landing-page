@@ -13,21 +13,89 @@
   position: relative;
   top: 8vh;
 }
-
-#first-line {
+.title #first-line {
   font-size: 36px;
   font-weight: 200;
+  color: hsl(234deg, 12%, 34%);
 }
-
-#second-line {
+.title #second-line {
   font-size: 36px;
   font-weight: 600;
+  color: hsl(234deg, 12%, 34%);
 }
-
-#third-line {
+.title #third-line {
   font-size: 15px;
   font-weight: 400;
   color: rgb(157, 157, 157);
-  line-break: auto;
+  opacity: 80%;
   text-align: center;
+}
+
+.card-master {
+  position: relative;
+  top: 13vh;
+  display: flex;
+  flex-direction: row;
+}
+.card-master .card-box {
+  position: relative;
+  border: 0px 5px 5px 5px solid transparent;
+  border-radius: 5px;
+  height: 250px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0px 5px 5px hsla(212deg, 86%, 64%, 0.225);
+  transition: transform 0.5s;
+}
+.card-master .card-box:hover {
+  transform: scale(1.05);
+}
+.card-master .card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: hsl(234deg, 12%, 34%);
+  opacity: 70%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.card-master .card-content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(157, 157, 157);
+  opacity: 70%;
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
+.card-master .card-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.card-master #card1 {
+  border-top: 5px solid hsl(180deg, 62%, 55%);
+  position: absolute;
+  left: 21vw;
+  top: 15vh;
+}
+.card-master #card2 {
+  border-top: 5px solid hsl(0deg, 78%, 62%);
+  position: absolute;
+  right: 41vw;
+  top: 1vh;
+}
+.card-master #card3 {
+  border-top: 5px solid hsl(34deg, 97%, 64%);
+  position: absolute;
+  right: 41vw;
+  top: 31vh;
+}
+.card-master #card4 {
+  border-top: 5px solid hsl(212deg, 86%, 64%);
+  position: absolute;
+  right: 21vw;
+  top: 15vh;
 }/*# sourceMappingURL=styles.css.map */
